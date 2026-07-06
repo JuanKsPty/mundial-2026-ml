@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env / secrets
+.env
+
+# Data (raw downloads are reproducible; database is generated)
+data/raw/
+data/database.db
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

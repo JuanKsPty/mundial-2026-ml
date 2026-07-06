@@ -1,0 +1,20 @@
+{
+  "_comment": "Official WC2026 knockout adjacency (FIFA matches 89-104), verified 2026-07-05 against Wikipedia (2026 FIFA World Cup knockout stage), CBS Sports and ESPN. R32 winners already resolved into the R16 team names. Third-place match (103) omitted: it does not affect champion probabilities. feeds order = [home, away] per the official listing.",
+  "slots": [
+    {"id": "r16_89", "round": "round_of_16", "date": "2026-07-04", "home": "Canada", "away": "Morocco"},
+    {"id": "r16_90", "round": "round_of_16", "date": "2026-07-04", "home": "Paraguay", "away": "France"},
+    {"id": "r16_91", "round": "round_of_16", "date": "2026-07-05", "home": "Brazil", "away": "Norway"},
+    {"id": "r16_92", "round": "round_of_16", "date": "2026-07-05", "home": "Mexico", "away": "England"},
+    {"id": "r16_93", "round": "round_of_16", "date": "2026-07-06", "home": "Portugal", "away": "Spain"},
+    {"id": "r16_94", "round": "round_of_16", "date": "2026-07-06", "home": "United States", "away": "Belgium"},
+    {"id": "r16_95", "round": "round_of_16", "date": "2026-07-07", "home": "Argentina", "away": "Egypt"},
+    {"id": "r16_96", "round": "round_of_16", "date": "2026-07-07", "home": "Switzerland", "away": "Colombia"},
+    {"id": "qf_97", "round": "quarterfinal", "date": "2026-07-09", "feeds": ["r16_90", "r16_89"]},
+    {"id": "qf_98", "round": "quarterfinal", "date": "2026-07-10", "feeds": ["r16_93", "r16_94"]},
+    {"id": "qf_99", "round": "quarterfinal", "date": "2026-07-11", "feeds": ["r16_91", "r16_92"]},
+    {"id": "qf_100", "round": "quarterfinal", "date": "2026-07-11", "feeds": ["r16_95", "r16_96"]},
+    {"id": "sf_101", "round": "semifinal", "date": "2026-07-14", "feeds": ["qf_97", "qf_98"]},
+    {"id": "sf_102", "round": "semifinal", "date": "2026-07-15", "feeds": ["qf_99", "qf_100"]},
+    {"id": "final", "round": "final", "date": "2026-07-19", "feeds": ["sf_101", "sf_102"]}
+  ]
+}

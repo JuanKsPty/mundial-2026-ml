@@ -1,0 +1,53 @@
+slot,round,date,played,score,winner,side,team,p_present,p_win_match
+r16_89,round_of_16,2026-07-04,True,0-3,Morocco,home,Canada,1.0,0.0
+r16_89,round_of_16,2026-07-04,True,0-3,Morocco,away,Morocco,1.0,1.0
+r16_90,round_of_16,2026-07-04,True,0-1,France,home,Paraguay,1.0,0.0
+r16_90,round_of_16,2026-07-04,True,0-1,France,away,France,1.0,1.0
+r16_91,round_of_16,2026-07-05,True,1-2,Norway,home,Brazil,1.0,0.0
+r16_91,round_of_16,2026-07-05,True,1-2,Norway,away,Norway,1.0,1.0
+r16_92,round_of_16,2026-07-05,True,2-3,England,home,Mexico,1.0,0.0
+r16_92,round_of_16,2026-07-05,True,2-3,England,away,England,1.0,1.0
+r16_93,round_of_16,2026-07-06,False,,,home,Portugal,1.0,0.4172
+r16_93,round_of_16,2026-07-06,False,,,away,Spain,1.0,0.5828
+r16_94,round_of_16,2026-07-06,False,,,home,United States,1.0,0.3298
+r16_94,round_of_16,2026-07-06,False,,,away,Belgium,1.0,0.6702
+r16_95,round_of_16,2026-07-07,False,,,home,Argentina,1.0,0.8376
+r16_95,round_of_16,2026-07-07,False,,,away,Egypt,1.0,0.1624
+r16_96,round_of_16,2026-07-07,False,,,home,Switzerland,1.0,0.323
+r16_96,round_of_16,2026-07-07,False,,,away,Colombia,1.0,0.677
+qf_97,quarterfinal,2026-07-09,False,,,home,France,1.0,0.6378
+qf_97,quarterfinal,2026-07-09,False,,,away,Morocco,1.0,0.3622
+qf_98,quarterfinal,2026-07-10,False,,,home,Spain,0.5828,0.3998
+qf_98,quarterfinal,2026-07-10,False,,,home,Portugal,0.4172,0.2508
+qf_98,quarterfinal,2026-07-10,False,,,away,Belgium,0.6702,0.259
+qf_98,quarterfinal,2026-07-10,False,,,away,United States,0.3298,0.0904
+qf_99,quarterfinal,2026-07-11,False,,,home,Norway,1.0,0.363
+qf_99,quarterfinal,2026-07-11,False,,,away,England,1.0,0.637
+qf_100,quarterfinal,2026-07-11,False,,,home,Argentina,0.8376,0.5892
+qf_100,quarterfinal,2026-07-11,False,,,home,Egypt,0.1624,0.0524
+qf_100,quarterfinal,2026-07-11,False,,,away,Colombia,0.677,0.2776
+qf_100,quarterfinal,2026-07-11,False,,,away,Switzerland,0.323,0.0808
+sf_101,semifinal,2026-07-14,False,,,home,France,0.6378,0.3546
+sf_101,semifinal,2026-07-14,False,,,home,Morocco,0.3622,0.156
+sf_101,semifinal,2026-07-14,False,,,away,Spain,0.3998,0.221
+sf_101,semifinal,2026-07-14,False,,,away,Belgium,0.259,0.1202
+sf_101,semifinal,2026-07-14,False,,,away,Portugal,0.2508,0.1228
+sf_101,semifinal,2026-07-14,False,,,away,United States,0.0904,0.0254
+sf_102,semifinal,2026-07-15,False,,,home,England,0.637,0.2852
+sf_102,semifinal,2026-07-15,False,,,home,Norway,0.363,0.1044
+sf_102,semifinal,2026-07-15,False,,,away,Argentina,0.5892,0.4068
+sf_102,semifinal,2026-07-15,False,,,away,Colombia,0.2776,0.1536
+sf_102,semifinal,2026-07-15,False,,,away,Switzerland,0.0808,0.0322
+sf_102,semifinal,2026-07-15,False,,,away,Egypt,0.0524,0.0178
+final,final,2026-07-19,False,,,home,France,0.3546,0.1856
+final,final,2026-07-19,False,,,home,Spain,0.221,0.1216
+final,final,2026-07-19,False,,,home,Morocco,0.156,0.066
+final,final,2026-07-19,False,,,home,Portugal,0.1228,0.0586
+final,final,2026-07-19,False,,,home,Belgium,0.1202,0.0526
+final,final,2026-07-19,False,,,home,United States,0.0254,0.0074
+final,final,2026-07-19,False,,,away,Argentina,0.4068,0.2574
+final,final,2026-07-19,False,,,away,England,0.2852,0.1444
+final,final,2026-07-19,False,,,away,Colombia,0.1536,0.0602
+final,final,2026-07-19,False,,,away,Norway,0.1044,0.0316
+final,final,2026-07-19,False,,,away,Switzerland,0.0322,0.0104
+final,final,2026-07-19,False,,,away,Egypt,0.0178,0.0042

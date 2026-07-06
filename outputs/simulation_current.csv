@@ -1,0 +1,17 @@
+team,alive,p_qf,p_sf,p_final,p_champion,simulations
+Argentina,True,0.8376,0.5892,0.4068,0.2574,5000
+France,True,1.0,0.6378,0.3546,0.1856,5000
+England,True,1.0,0.637,0.2852,0.1444,5000
+Spain,True,0.5828,0.3998,0.221,0.1216,5000
+Morocco,True,1.0,0.3622,0.156,0.066,5000
+Colombia,True,0.677,0.2776,0.1536,0.0602,5000
+Portugal,True,0.4172,0.2508,0.1228,0.0586,5000
+Belgium,True,0.6702,0.259,0.1202,0.0526,5000
+Norway,True,1.0,0.363,0.1044,0.0316,5000
+Switzerland,True,0.323,0.0808,0.0322,0.0104,5000
+United States,True,0.3298,0.0904,0.0254,0.0074,5000
+Egypt,True,0.1624,0.0524,0.0178,0.0042,5000
+Canada,False,0.0,0.0,0.0,0.0,5000
+Paraguay,False,0.0,0.0,0.0,0.0,5000
+Brazil,False,0.0,0.0,0.0,0.0,5000
+Mexico,False,0.0,0.0,0.0,0.0,5000
