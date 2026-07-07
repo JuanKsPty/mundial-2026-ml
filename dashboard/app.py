@@ -263,10 +263,10 @@ with tab_bracket:
         "ocupar y ganar la llave (Monte Carlo, 5000 simulaciones)."
     )
     if top_r.button("🔄 Actualizar y re-simular", use_container_width=True):
-        with st.spinner("Sincronizando resultados y re-simulando el bracket..."):
+        with st.spinner("Descargando resultados nuevos y re-simulando el bracket..."):
             from scripts.sync_wc2026 import main as _sync_main
             from src.simulation.tournament_state import simulate_from_current_state
-            _sync_main(source="auto")
+            _sync_main(source="auto", refresh=True)
             simulate_from_current_state(N_SIMULATIONS_DEFAULT, sampler=_load_sampler())
         st.cache_data.clear()
         st.rerun()

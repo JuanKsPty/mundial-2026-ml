@@ -1,8 +1,8 @@
 # Syncs WC2026 fixtures/results into SQLite with a source cascade so the
 # project never blocks on the API:
 #   1. API-Football (if APIFOOTBALL_KEY is set and covers season 2026)
-#   2. martj42 results.csv (already downloaded by the historical pipeline;
-#      it ships played AND upcoming WC2026 fixtures)
+#   2. martj42 results.csv (local copy; pass refresh=True / --refresh to
+#      force a fresh download - it ships played AND upcoming WC2026 fixtures)
 #   3. data/manual/wc2026_results.csv (hand-editable, applied as overrides)
 
 """Sync WC2026 matches into data/database.db. Run: python -m scripts.sync_wc2026"""
@@ -157,9 +157,13 @@ def print_summary() -> None:
             print(f"    {round_name:13s} {done}/{len(sub)} played")
 
 
-def main(source: str = "auto") -> None:
+def main(source: str = "auto", refresh: bool = False) -> None:
     print("Syncing WC2026 matches -> data/database.db")
     db.init_db()
+    if refresh:
+        from src.data.historical_data import download_martj42_dataset
+        print("  Refreshing martj42 dataset (forced download)...")
+        download_martj42_dataset(force=True)
     if source in ("auto", "api"):
         written = sync_from_api()
         if written is None and source == "auto":
@@ -178,5 +182,9 @@ if __name__ == "__main__":
         "--source", choices=["auto", "api", "martj42"], default="auto",
         help="auto: API if available, else martj42 (manual CSV always applied last)",
     )
+    parser.add_argument(
+        "--refresh", action="store_true",
+        help="force re-download of the martj42 dataset before syncing",
+    )
     args = parser.parse_args()
-    main(source=args.source)
+    main(source=args.source, refresh=args.refresh)
