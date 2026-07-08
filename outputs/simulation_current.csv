@@ -1,17 +1,17 @@
 team,alive,p_qf,p_sf,p_final,p_champion,simulations
-Argentina,True,0.8424,0.5828,0.395,0.2486,5000
-Spain,True,1.0,0.6492,0.377,0.2118,5000
-France,True,1.0,0.6442,0.3284,0.1726,5000
-England,True,1.0,0.632,0.2872,0.1394,5000
-Belgium,True,1.0,0.3508,0.1544,0.0656,5000
-Colombia,True,0.6612,0.2828,0.1498,0.0586,5000
-Morocco,True,1.0,0.3558,0.1402,0.0566,5000
-Norway,True,1.0,0.368,0.1134,0.0288,5000
-Switzerland,True,0.3388,0.084,0.0394,0.014,5000
-Egypt,True,0.1576,0.0504,0.0152,0.004,5000
+Argentina,True,1.0,0.7924,0.5438,0.3328,5000
+Spain,True,1.0,0.653,0.3742,0.197,5000
+France,True,1.0,0.6342,0.3266,0.1602,5000
+England,True,1.0,0.6304,0.266,0.1322,5000
+Belgium,True,1.0,0.347,0.1562,0.065,5000
+Morocco,True,1.0,0.3658,0.143,0.0534,5000
+Switzerland,True,1.0,0.2076,0.0966,0.037,5000
+Norway,True,1.0,0.3696,0.0936,0.0224,5000
 Canada,False,0.0,0.0,0.0,0.0,5000
 Paraguay,False,0.0,0.0,0.0,0.0,5000
 Brazil,False,0.0,0.0,0.0,0.0,5000
 Mexico,False,0.0,0.0,0.0,0.0,5000
 Portugal,False,0.0,0.0,0.0,0.0,5000
 United States,False,0.0,0.0,0.0,0.0,5000
+Egypt,False,0.0,0.0,0.0,0.0,5000
+Colombia,False,0.0,0.0,0.0,0.0,5000

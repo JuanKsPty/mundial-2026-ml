@@ -52,7 +52,12 @@ class TournamentSnapshot:
 
 
 def _match_db_row(df: pd.DataFrame, home: str, away: str, round_name: str):
-    """Find the DB row for a pairing (order-insensitive) in a given round."""
+    """Find the DB row for a pairing (order-insensitive) in a given round.
+
+    martj42 sometimes keeps a stale NS placeholder at the official schedule
+    date alongside the real played row at the actual date (same pairing,
+    different date -> two PK rows). Prefer a played row over NS if both exist.
+    """
     sel = df[
         (df["round"] == round_name)
         & (
@@ -60,7 +65,10 @@ def _match_db_row(df: pd.DataFrame, home: str, away: str, round_name: str):
             | ((df["home_team"] == away) & (df["away_team"] == home))
         )
     ]
-    return sel.iloc[0] if len(sel) else None
+    if len(sel) == 0:
+        return None
+    played = sel[sel["status"] != "NS"]
+    return played.iloc[0] if len(played) else sel.iloc[0]
 
 
 def _row_winner(row) -> str | None:
