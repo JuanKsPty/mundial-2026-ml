@@ -55,6 +55,10 @@ def rows_from_martj42() -> list[dict]:
     ].copy()
     wc["home_team"] = wc["home_team"].apply(normalize_team_name)
     wc["away_team"] = wc["away_team"].apply(normalize_team_name)
+    # drop fixtures with a not-yet-resolved opponent (e.g. 3rd place/final
+    # slots before the semifinals are done) - our own bracket_2026.json
+    # tracks those via `feeds`, no need for a placeholder DB row.
+    wc = wc[wc["home_team"].notna() & wc["away_team"].notna()]
 
     # penalty winners live in a separate martj42 file
     pen_winner: dict[tuple, str] = {}

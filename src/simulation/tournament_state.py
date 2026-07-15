@@ -129,11 +129,11 @@ def build_snapshot() -> TournamentSnapshot:
                  for t in (s.home, s.away) if t]
     if len(r16_teams) != 16:
         raise ValueError(f"expected 16 R16 teams, got {len(r16_teams)} - check bracket/DB")
-    eliminated_r16 = {
-        t for s in slots.values() if s.round == "round_of_16" and s.played
-        for t in (s.home, s.away) if t != s.winner
+    eliminated = {
+        t for s in slots.values() if s.played
+        for t in (s.home, s.away) if t and t != s.winner
     }
-    alive = [t for t in r16_teams if t not in eliminated_r16]
+    alive = [t for t in r16_teams if t not in eliminated]
     n_pending = sum(1 for s in slots.values() if not s.played)
     return TournamentSnapshot(slots=slots, order=order, alive=alive, n_pending=n_pending)
 
